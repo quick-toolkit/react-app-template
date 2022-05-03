@@ -19,7 +19,7 @@ module.exports = {
      */
     less: {
       lessOptions: {
-        modifyVars: { '@primary-color': '#1DA57A' },
+        modifyVars: {},
         javascriptEnabled: true,
       }
     },
@@ -58,7 +58,7 @@ module.exports = {
    * StylelintWebpackPlugin options
    * see: https://webpack.js.org/plugins/stylelint-webpack-plugin/#options
    */
-  styleLint: {},
+  styleLint: null,
   // DevServer see: https://webpack.js.org/configuration/dev-server
   devServer: {
     port: 3002

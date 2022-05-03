@@ -12,21 +12,31 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@quick-toolkit/ant-design-plus": "^1.0.0",
     "@quick-toolkit/class-transformer": "^1.0.0",
+    "@quick-toolkit/http": "^1.0.0",
+    "@quick-toolkit/rc-echarts": "^1.0.0",
+    "@quick-toolkit/rc-router-dom": "^1.0.0",
     "@types/node": "^17.0.23",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "antd": "^4.19.4",
-    "babel-plugin-import": "^1.13.3",
+    "axios": "^0.27.2",
     "core-js": "^3.21.1",
+    "echarts": "^5.3.2",
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "web-vitals": "^2.1.4"
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0"
   },
   "devDependencies": {
-    "@quick-toolkit/react-scripts": "^1.0.1"
+    "@quick-toolkit/react-scripts": "^1.0.0",
+    "babel-plugin-import": "^1.13.3",
+    "prettier": "^2.6.2",
+    "web-vitals": "^2.1.4"
   },
   "browserslist": {
     "production": [

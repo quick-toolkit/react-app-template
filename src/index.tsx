@@ -2,10 +2,17 @@ import 'core-js';
 import 'reflect-metadata';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { App } from './app';
 import './index.less';
+import { Bootstrap } from './bootstrap';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Provider store={store}>
+    <Bootstrap />
+  </Provider>,
+  document.getElementById('root')
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
