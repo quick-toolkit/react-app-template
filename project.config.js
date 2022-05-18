@@ -3,7 +3,23 @@ module.exports = {
    * webpack config options
    * see: https://webpack.js.org/configuration/
    */
-  webpack: {},
+  webpack: {
+    externals: {
+      react: "React",
+      "react-dom": "ReactDOM",
+      "react-router-dom": "ReactRouterDOM",
+      antd: "antd",
+      axios: "axios",
+      redux: "Redux",
+      moment: "moment",
+      "react-redux": "ReactRedux",
+      validator: "validator",
+      "@ant-design/icons": "icons",
+      "reflect-metadata": "Reflect",
+      history: 'history',
+      "react-router": "ReactRouter"
+    }
+  },
   /**
    * style configs
    */
