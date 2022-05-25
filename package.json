@@ -6,7 +6,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "swagger": "react-scripts swagger-generator",
+    "eslint": "eslint ./src/modules/*.ts --fix"
   },
   "keywords": [],
   "author": "",
@@ -16,14 +18,14 @@
     "@quick-toolkit/ant-design-plus": "^1.0.2",
     "@quick-toolkit/class-transformer": "^1.0.1",
     "@quick-toolkit/http": "^1.0.2",
-    "@quick-toolkit/rc-router-dom": "^1.0.0",
+    "@quick-toolkit/rc-router-dom": "^1.0.1",
     "@types/crypto-js": "^4.1.1",
     "@types/lodash": "^4.14.182",
     "@types/node": "^17.0.31",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.3",
     "@types/redux-logger": "^3.0.9",
-    "antd": "^4.20.3",
+    "antd": "^4.20.6",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "core-js": "^3.21.1",
@@ -42,7 +44,7 @@
     "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
-    "@quick-toolkit/react-scripts": "^1.0.6",
+    "@quick-toolkit/react-scripts": "^1.0.7",
     "babel-plugin-import": "^1.13.3",
     "prettier": "^2.6.2",
     "web-vitals": "^2.1.4"
