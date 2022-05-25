@@ -8,6 +8,9 @@
     "@typescript-eslint",
     "prettier"
   ],
+  "extends": [
+    "react-app"
+  ],
   "rules": {
     "prettier/prettier": [
       "error",
