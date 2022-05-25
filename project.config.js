@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = {
   /**
    * webpack config options
@@ -8,7 +9,6 @@ module.exports = {
       react: "React",
       "react-dom": "ReactDOM",
       "react-router-dom": "ReactRouterDOM",
-      antd: "antd",
       axios: "axios",
       redux: "Redux",
       moment: "moment",
@@ -78,5 +78,28 @@ module.exports = {
   // DevServer see: https://webpack.js.org/configuration/dev-server
   devServer: {
     port: 3002
-  }
+  },
+  swaggers: [
+    {
+      url: '/api/user-service/v2/api-docs',
+      outputs: [
+        {
+          dest: path.resolve('api', 'user-service'),
+          dtos: [
+            {
+              method: 'get',
+              path: '/authority/list',
+              name: 'AuthorityListDto',
+            },
+          ],
+          vos: [
+            {
+              target: 'HttpResource«object»',
+              name: 'HttpResource<T>',
+            },
+          ],
+        }
+      ]
+    },
+  ]
 }
